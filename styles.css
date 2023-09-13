@@ -1,0 +1,500 @@
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Raleway', sans-serif;
+  }
+
+  :root {
+      --primary-color: #032846;
+      --secondary-color: #e9eef4;
+      --text-color: #555;
+      --light-text-color: #777;
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  li {
+      display: inline-block;
+  }
+
+  a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .title {
+      font-size: 55px;
+      font-weight: 900;
+      color: var(--text-color);
+      text-align: center;
+      text-transform: uppercase;
+      margin: 4rem 0;
+  }
+
+  .title__span {
+      color: var(--primary-color);
+      font-weight: 400;
+  }
+
+  /*     Home - Section    */
+
+  .home__section {
+      background: var(--primary-color);
+      min-height: 400px;
+  }
+
+  .home__section .left__col img {
+      width: 350px;
+      border: 4px solid #fff;
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 10%);
+      margin-top: 75px;
+      position: absolute;
+  }
+
+  .home__section .right__col {
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 10rem;
+  }
+
+  .home__section .right__col h6 {
+      font-size: 23px;
+  }
+
+  .home__section .right__col h1 {
+      font-size: 42px;
+      font-weight: 600;
+  }
+
+  /*     About - Section    */
+
+  .about__section .title {
+      margin: 8rem 0 4rem;
+  }
+
+  .about__section .left__col .heading {
+      padding: 1rem;
+      color: var(--primary-color);
+  }
+
+  .about__section .left__col .heading h1 {
+      font-weight: 600;
+      font-size: 46px;
+      margin: 0;
+  }
+
+  .about__section .left__col .heading h6 {
+      font-weight: 600;
+      color: var(--text-color);
+      margin: 0;
+  }
+
+  .about__section .left__col .content {
+      padding: .5rem 1.5rem;
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: var(--light-text-color);
+  }
+
+  .about__section .left__col .content p {
+      text-align: justify;
+      font-weight: 600;
+  }
+
+  .about__section .left__col .content .ul__div {
+      display: flex;
+      justify-content: space-between;
+      letter-spacing: 0;
+  }
+
+
+  .about__section .left__col .content .ul__div b,
+  .about__section .right__col .content b {
+      color: #222;
+  }
+
+  .about__section .left__col .resume__button {
+      background: var(--primary-color);
+      color: #fff;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: 2px solid var(--primary-color);
+      font-size: 14px;
+      font-weight: 600;
+      margin: auto;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      transition: .3s;
+  }
+
+  .about__section .left__col .resume__button .icon__download {
+      font-size: 18px;
+      padding-left: 1rem;
+  }
+
+  .about__section .left__col .resume__button:hover {
+      background-color: #fff;
+      color: var(--primary-color);
+  }
+
+  .about__section .left__col .resume__button:hover a {
+      color: var(--primary-color);
+  }
+
+
+  .about__section .right__col .heading {
+      color: var(--primary-color);
+      padding: 1rem;
+      text-align: center;
+  }
+
+  .about__section .right__col .heading h1 {
+      font-weight: 700;
+      font-size: 46px;
+      margin: 0;
+  }
+
+  .about__section .right__col .content {
+      padding: 1.5rem;
+      padding-bottom: .5rem;
+      font-size: 14px;
+      color: var(--light-text-color);
+  }
+
+  .about__section .right__col .content h6,
+  .about__section .right__col .content p {
+      margin: 0;
+  }
+
+  .about__section .right__col .content p a,
+  .about__section .left__col .content .ul__div ul li a {
+      color: var(--light-text-color);
+  }
+
+  .about__section .right__col .content hr {
+      margin: .5rem 0;
+  }
+
+  .about__section .right__col .heading__skills {
+      padding: 0 1rem;
+      color: var(--text-color);
+  }
+
+  .about__section .right__col .content ul {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .about__section .right__col .content ul li {
+      font-size: 14px;
+      font-weight: 600;
+      display: list-item;
+      padding: 4px 12px;
+  }
+
+  /*     Projects - Section    */
+
+  .projects__section .card,
+  .card img {
+      border-radius: 8px;
+  }
+
+  .projects__section .card {
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  }
+
+  .projects__section .card:hover {
+      transform: scale(1.05);
+      transition: transform .5s;
+  }
+
+  .projects__section .card .card-body {
+      padding: .5rem 1rem;
+  }
+
+  .projects__section .card .card-body .card-title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+  }
+
+  .projects__section .card img {
+      padding: 5px;
+  }
+
+  /*     Contact - Section    */
+  .contact__section {
+      padding-bottom: 2rem;
+  }
+
+  .contact__section form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .contact__section form input {
+      width: 49%;
+      outline: none;
+      border: 1px solid #ddd;
+      color: var(--text-color);
+      background: #f2f2f2;
+      font-size: 14px;
+      border-radius: 4px;
+      padding: 6px 8px;
+      margin: 8px 4px;
+  }
+
+  .contact__section form .input__name {
+      margin-left: 0;
+  }
+
+  .contact__section form .input__email {
+      margin-right: 0;
+  }
+
+  .contact__section form .input__message {
+      width: 100%;
+      outline: none;
+      border: 1px solid #ddd;
+      color: var(--text-color);
+      background: #f2f2f2;
+      font-size: 14px;
+      border-radius: 4px;
+      padding: 6px 8px;
+      margin: 12px 4px;
+  }
+
+  .contact__section form button {
+      color: #fff;
+      background: var(--primary-color);
+      border: 2px solid var(--primary-color);
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 25px;
+      transition: .3s;
+  }
+
+  .contact__section form button:hover {
+      color: var(--primary-color);
+      background: #fff;
+  }
+
+  .contact__section .right__col .social__icons {
+      margin-top: 1rem;
+  }
+
+  .contact__section .right__col .social__icons li {
+      display: list-item;
+      transition: transform .5s;
+      padding-left: 1rem;
+  }
+
+  .contact__section .right__col .social__icons a {
+      color: var(--text-color);
+      font-size: 16px;
+  }
+
+  .contact__section .right__col .social__icons li:hover {
+      transform: translateX(5px);
+      font-weight: 600;
+  }
+
+  .contact__section .right__col .social__icons li:hover a {
+      color: var(--primary-color);
+  }
+
+  .contact__section .social__icons__sm {
+      background: var(--primary-color);
+      padding: 5px 3px;
+      width: fit-content;
+      border-radius: 50px;
+      margin-top: 1rem;
+      display: none;
+  }
+
+  .contact__section .social__icons__sm a {
+      color: #fff;
+      font-size: 20px;
+      border-radius: 50%;
+      padding: 5px 7px;
+      transition: .3s;
+  }
+
+
+  .contact__section .sub__heading {
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-color);
+      font-size: 20px;
+  }
+
+  /*     Footer - Section    */
+  .footer__section {
+      background: #000;
+      color: var(--light-text-color);
+      text-align: center;
+      padding: 1rem;
+  }
+
+  /*    GoTopButton    */
+  .go-top-btn {
+      position: fixed;
+      width: 40px;
+      height: 40px;
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      bottom: 40px;
+      right: 50px;
+      text-decoration: none;
+      text-align: center;
+      line-height: 44px;
+      font-size: 40px;
+      border-radius: 50%;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.5s;
+  }
+
+  .go-top-btn.active {
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .go-top-btn:hover {
+      background: var(--secondary-color);
+      color: var(--primary-color);
+  }
+
+
+
+
+
+
+  /*  Responsive for mobile phone    */
+  @media only screen and (max-width: 480px) {
+      .title {
+          font-size: 35px;
+      }
+
+      .home__section {
+          min-height: 500px;
+      }
+
+      .home__section .right__col {
+          padding-top: 4rem;
+      }
+
+      .home__section .left__col {
+          order: 2;
+          display: flex;
+          justify-content: center;
+      }
+
+      .home__section .left__col img {
+          width: 300px;
+      }
+
+
+      .about__section .title {
+          margin-top: 12rem;
+      }
+
+      .about__section .left__col .content .ul__div {
+          flex-direction: column;
+          letter-spacing: 0;
+      }
+
+      .about__section .left__col .content ul li {
+          display: list-item;
+      }
+
+      .about__section .left__col .resume__button {
+          width: 90%;
+          justify-content: center;
+      }
+
+      .about__section .right__col {
+          margin-top: 1rem;
+      }
+
+      .about__section .heading {
+          padding-bottom: 0 !important;
+      }
+
+      .about__section .heading h1 {
+          font-size: 42px !important;
+          text-align: left;
+      }
+
+      .about__section .right__col .content {
+          padding: .5rem 1.5rem;
+      }
+
+      .contact__section form input {
+          width: 100%;
+      }
+
+      .contact__section .right__col {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+      }
+
+      .contact__section form {
+          justify-content: flex-end;
+      }
+
+      .contact__section form .input__message {
+          width: 100%;
+      }
+
+      .contact__section form .input__name {
+          margin-left: 4px;
+      }
+
+      .contact__section form .input__email {
+          margin-right: 4px;
+      }
+
+      .contact__section form button {
+          padding: 5px 15px;
+      }
+
+      .contact__section .social__icons {
+          display: none;
+      }
+
+      .contact__section .social__icons__sm {
+          display: block;
+      }
+
+      .projects__section .card:hover {
+          transform: none;
+      }
+  }
+
+  .reveal {
+      position: relative;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: all 1s ease;
+  }
+
+  .reveal.active {
+      transform: translateY(0px);
+      opacity: 1;
+  }
